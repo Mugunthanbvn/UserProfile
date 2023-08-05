@@ -26,6 +26,9 @@ foreign key
 
 
 Installation:
+
 python -m venv env
+
 python setup.py
+
 python.server.py
