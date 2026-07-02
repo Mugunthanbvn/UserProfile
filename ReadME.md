@@ -8,7 +8,7 @@ b. First Name,Password,Email,Phone — postgreSQL.
 c. Profile picture – MongoDB
 d. Check Email already exist
 
-2. GET method – get registered user details
+2. GET method – get registered user details,
 
 Hint : Unique user_id for both database 
 
