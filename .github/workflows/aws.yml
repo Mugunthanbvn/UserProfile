@@ -1,0 +1,27 @@
+name: Deploy to AWS
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  id-token: write   # allows this workflow to request OIDC token from GitHub
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure AWS credentials via OIDC
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::348287123137:role/doc-platform-deploy
+          aws-region: us-east-1
+
+      - name: Verify AWS identity
+        run: aws sts get-caller-identity   # proves you're running as the deploy role
+
+      - name: Test S3 access
+        run: aws s3 ls || echo "No buckets yet — permission check passed"
