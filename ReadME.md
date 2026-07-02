@@ -10,7 +10,7 @@ d. Check Email already exist
 
 2. GET method – get registered user details
 
-Hint : Unique user_id for both database ,
+Hint : Unique user_id for both database 
 
 1. Write a program for user registration in fastAPI ( Using postgreSQL )
 
