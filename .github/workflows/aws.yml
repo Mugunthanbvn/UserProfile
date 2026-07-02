@@ -24,4 +24,4 @@ jobs:
         run: aws sts get-caller-identity   # proves you're running as the deploy role
 
       - name: Test S3 access
-        run: run: aws s3 ls s3://doc-platform-1 || echo "No buckets yet — permission check passed"
+        run: aws s3 ls s3://doc-platform-1 || echo "No buckets yet — permission check passed"
