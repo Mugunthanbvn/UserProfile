@@ -4,7 +4,7 @@ Requirement:
 and MobgoDB )
 
 a. Registration fields – Full Name,Email,Password,Phone,Profile_picture
-b. First Name,Password,Email,Phone — postgreSQL
+b. First Name,Password,Email,Phone — postgreSQL.
 c. Profile picture – MongoDB
 d. Check Email already exist
 
